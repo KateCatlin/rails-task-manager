@@ -3,5 +3,7 @@
 
 <button> <%= link_to "Update task", update_path(@task) %> </button>
 
-<button> <%= link_to "Delete this one", delete_path(@task) %> </button>
+<button> <%= link_to "Delete", task_path(@task),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %> </button>
 
