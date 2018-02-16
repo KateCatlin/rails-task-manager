@@ -1,0 +1,7 @@
+<h1><%= @task.title %></h1>
+<p> <%= @task.details %> </p>
+
+<button> <%= link_to "Update task", update_path(@task) %> </button>
+
+<button> <%= link_to "Delete this one", delete_path(@task) %> </button>
+
